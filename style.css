@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  background-color: #212529;
+  padding: 10px 20px;
+}
+nav .logo {
+  font-weight: bold;
+  color: white;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  padding-right: 16px;
+  font-weight: bold;
+}
+nav ul li:nth-child(1) {
+  color: white;
+}
+nav ul li:nth-child(2),
+nav ul li:nth-child(3) {
+  color: grey;
+}
+
+main header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #1d77fd;
+  color: white;
+  padding: 100px 20px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+header a {
+  text-decoration: none;
+  margin: 20px 0;
+  padding: 10px 20px;
+  background: white;
+  color: black;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+header a:hover {
+  background-color: rgb(227, 224, 224);
+  transition: 0.5s;
+}
+.tab {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 200px 300px;
+}
+main .about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+main .about ul {
+  list-style-position: inside;
+  margin: 10px 20px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 30px;
+  background: #212529;
+  color: white;
+  font-weight: 100;
+}
+
+@media only screen and (max-width: 768px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+  header p {
+    font-size: 0.6rem;
+  }
+  header a {
+    padding: 0.6rem 0.2rem;
+  }
+  .tab {
+    margin: 100px 20px;
+  }
+}
